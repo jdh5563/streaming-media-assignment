@@ -1,0 +1,24 @@
+{
+  "name": "streaming-media-assignment",
+  "version": "1.0.0",
+  "description": "Streaming Media HW for IGME-430",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdh5563/streaming-media-assignment.git"
+  },
+  "author": "John Heiden",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jdh5563/streaming-media-assignment/issues"
+  },
+  "homepage": "https://github.com/jdh5563/streaming-media-assignment#readme",
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
