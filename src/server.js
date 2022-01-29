@@ -4,6 +4,7 @@ const mediaHandler = require('./mediaResponses.js');
 
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
+// Handles requests from the server
 const onRequest = (request, response) => {
   console.log(request.url);
 
