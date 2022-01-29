@@ -56,7 +56,7 @@ const loadFile = (request, response, filePath, fileFormat) => {
   const file = path.resolve(__dirname, filePath);
 
   fs.stat(file, (err, stats) => {
-    if (err) return writeError();
+    if (err) return writeError(err, response);
     return writePartialFileResponse(stats, request, response, file, fileFormat);
   });
 };
@@ -73,4 +73,8 @@ const getBird = (request, response) => {
   loadFile(request, response, '../client/bird.mp4', 'video/mp4');
 };
 
-module.exports.getParty = getParty;
+module.exports = {
+  getParty,
+  getBling,
+  getBird,
+};
